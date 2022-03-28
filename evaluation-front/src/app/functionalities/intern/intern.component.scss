@@ -1,0 +1,15 @@
+.container {
+    resize: both;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    .div {
+        .card-intern{
+            margin: 20px;
+            width: 150px;
+            height: 150px;
+            font-weight: bold;
+            background-color: rgb(219, 219, 253);
+        }
+    }
+}

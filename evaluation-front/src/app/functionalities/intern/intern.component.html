@@ -1,0 +1,33 @@
+<h1>
+    List of interns
+</h1>
+
+<div class="container">
+    <div class="div" *ngFor="let i of interns">
+        <mat-card class="card-intern">
+            <mat-card-title>
+                {{i.name}}
+            </mat-card-title>
+            <mat-card-content>
+                {{i.age}}
+                <br>
+                {{i.dateOfBirth}}
+            </mat-card-content>
+
+            <mat-card-actions>
+                <div>
+                    <button mat-icon-button (click)="deleteIntern(i.id)">
+                        <mat-icon>
+                            delete
+                        </mat-icon>
+                    </button>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+    <div class="div">
+        <mat-card routerLink="add-intern" class="card-intern">
+            <button mat-icon-button><mat-icon>+</mat-icon></button>
+        </mat-card>
+    </div>
+</div>

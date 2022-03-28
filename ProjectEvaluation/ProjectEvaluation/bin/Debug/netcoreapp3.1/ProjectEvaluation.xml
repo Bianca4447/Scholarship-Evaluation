@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjectEvaluation</name>
+    </assembly>
+    <members>
+        <member name="M:ProjectEvaluation.Controllers.InternController.GetInterns">
+            <summary>
+            Get list of interns
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectEvaluation.Controllers.InternController.GetInternByIdAsync(System.Guid)">
+            <summary>
+            Return an intern by id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectEvaluation.Controllers.InternController.CreateIntern(ProjectEvaluation.Model.Interns)">
+            <summary>
+            Create a new intern
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectEvaluation.Controllers.InternController.UpdateNote(System.Guid,ProjectEvaluation.Model.Interns)">
+            <summary>
+            Update an intern by given id.
+            </summary>
+            <param name="id"></param>
+            <param name="intern"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectEvaluation.Controllers.InternController.DeleteNoteAsync(System.Guid)">
+            <summary>
+            Delete an intern by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

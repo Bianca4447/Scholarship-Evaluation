@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\biama\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\biama\\.nuget\\packages"
+    ]
+  }
+}
