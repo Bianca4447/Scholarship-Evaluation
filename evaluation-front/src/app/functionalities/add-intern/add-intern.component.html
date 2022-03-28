@@ -1,30 +1,30 @@
-<div>
+<div style="text-align: center;">
     <h1>Interns page</h1>
     <form class="form-input" [formGroup]="internsForm">
 
         <mat-form-field>
             <mat-label>Name</mat-label>
-            <input matInput  placeholder="Enter name" formControlName="name" required/>
-            <!-- <mat-error *ngIf="nameValid?.invalid && (nameValid?.dirty || nameValid?.touched)" class="alert">
+            <input matInput  placeholder="Enter name" formControlName="name"/>
+            <mat-error *ngIf="nameValid?.invalid && (nameValid?.dirty || nameValid?.touched)" class="alert">
                 *Name is required.
-            </mat-error> -->
+            </mat-error>
         </mat-form-field>
 
         <mat-form-field>
             <mat-label>Age</mat-label>
-            <input matInput placeholder="Enter your age" formControlName="age" required/>
-            <!-- <mat-error *ngIf="ageValid?.invalid && (ageValid?.dirty || ageValid?.touched)" class="alert">
+            <input matInput placeholder="Enter your age" formControlName="age"/>
+            <mat-error *ngIf="ageValid?.invalid && (ageValid?.dirty || ageValid?.touched)" class="alert">
                 *Age is required.
-            </mat-error> -->
+            </mat-error>
         </mat-form-field>
 
         <mat-form-field>
             <mat-label>Date of birth</mat-label>
-            <input matInput type="date" placeholder="Enter the date of birth" formControlName="dateOfBirth" required/>
+            <input matInput type="date" placeholder="Enter the date of birth" formControlName="dateOfBirth"/>
             
-            <!-- <mat-error *ngIf="dateOfBirthValid?.invalid && (dateOfBirthValid?.dirty || dateOfBirthValid?.touched)" class="alert">
+            <mat-error *ngIf="dateOfBirthValid?.invalid && (dateOfBirthValid?.dirty || dateOfBirthValid?.touched)" class="alert">
                 *Date of birth is required.
-            </mat-error> -->
+            </mat-error>
         </mat-form-field>
 
 
