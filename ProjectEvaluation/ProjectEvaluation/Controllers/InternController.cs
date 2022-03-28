@@ -80,11 +80,10 @@ namespace ProjectEvaluation.Controllers
             {
                 return Ok();
             }
-            //if (! await _noteCollectionService.Update(id, note))
-            //{
-
-            //    return NotFound("The note don't exist");
-            //}
+            if (!await _collectionService.Update(id, intern))
+            {
+                return NotFound("The intern don't exist");
+            }
             return NoContent();
         }
 
