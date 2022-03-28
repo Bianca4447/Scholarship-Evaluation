@@ -28,7 +28,7 @@
         </mat-form-field>
 
 
-        <button mat-raised-button color="primary" (click)="addIntern()">ADD</button>
+        <button mat-raised-button color="primary" [disabled]="internsForm.invalid" (click)="addIntern()">ADD</button>
 
     </form>
 
