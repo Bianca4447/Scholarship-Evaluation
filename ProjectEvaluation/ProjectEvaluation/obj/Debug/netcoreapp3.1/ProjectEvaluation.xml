@@ -4,7 +4,7 @@
         <name>ProjectEvaluation</name>
     </assembly>
     <members>
-        <member name="M:ProjectEvaluation.Controllers.InternController.GetInterns">
+        <member name="M:ProjectEvaluation.Controllers.InternController.GetInternsAsync">
             <summary>
             Get list of interns
             </summary>
@@ -17,13 +17,13 @@
             <param name="Id"></param>
             <returns></returns>
         </member>
-        <member name="M:ProjectEvaluation.Controllers.InternController.CreateIntern(ProjectEvaluation.Model.Interns)">
+        <member name="M:ProjectEvaluation.Controllers.InternController.CreateInternAsync(ProjectEvaluation.Model.Interns)">
             <summary>
             Create a new intern
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ProjectEvaluation.Controllers.InternController.UpdateNote(System.Guid,ProjectEvaluation.Model.Interns)">
+        <member name="M:ProjectEvaluation.Controllers.InternController.UpdateInternAsync(System.Guid,ProjectEvaluation.Model.Interns)">
             <summary>
             Update an intern by given id.
             </summary>

@@ -26,7 +26,7 @@ namespace ProjectEvaluation.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public async Task<IActionResult> GetInterns()
+        public async Task<IActionResult> GetInternsAsync()
         {
             return Ok(await _collectionService.GetAll());
 
@@ -48,7 +48,7 @@ namespace ProjectEvaluation.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> CreateIntern([FromBody] Interns intern)
+        public async Task<IActionResult> CreateInternAsync([FromBody] Interns intern)
         {
             if (intern == null)
             {
@@ -70,7 +70,7 @@ namespace ProjectEvaluation.Controllers
         /// <param name="intern"></param>
         /// <returns></returns>
         [HttpPut]
-        public async Task<IActionResult> UpdateNote(Guid id, [FromBody] Interns intern)
+        public async Task<IActionResult> UpdateInternAsync(Guid id, [FromBody] Interns intern)
         {
             if (intern == null)
             {
