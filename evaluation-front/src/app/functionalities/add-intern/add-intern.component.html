@@ -20,11 +20,13 @@
 
         <mat-form-field>
             <mat-label>Date of birth</mat-label>
-            <input matInput placeholder="Enter the date of birth" formControlName="dateOfBirth" required/>
+            <input matInput type="date" placeholder="Enter the date of birth" formControlName="dateOfBirth" required/>
+            
             <!-- <mat-error *ngIf="dateOfBirthValid?.invalid && (dateOfBirthValid?.dirty || dateOfBirthValid?.touched)" class="alert">
                 *Date of birth is required.
             </mat-error> -->
         </mat-form-field>
+
 
         <button mat-raised-button color="primary" (click)="addIntern()">ADD</button>
 
