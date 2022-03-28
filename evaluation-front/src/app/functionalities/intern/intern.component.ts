@@ -22,7 +22,7 @@ export class InternComponent implements OnInit {
     })
   }
 
-  editIntern(intern: any){
+  editIntern(intern: Intern){
     this.router.navigate(['/add-intern'], {
       queryParams: {IdIntern: intern.id}
     })

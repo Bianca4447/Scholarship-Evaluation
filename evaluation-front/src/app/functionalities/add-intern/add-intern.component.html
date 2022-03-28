@@ -1,29 +1,33 @@
-<h1>Interns page</h1>
-<form class="form-input" [formGroup]="internForm">
-    <mat-form-field>
-        <mat-label>Name *</mat-label>
-        <input matInput name="name" formControlName="name" placeholder="Enter name"/>
-        <mat-error *ngIf="nameValid?.invalid && (nameValid?.dirty || nameValid?.touched)" class="alert">
-            *Name is required.
-        </mat-error>
-    </mat-form-field><br><br>
+<div>
+    <h1>Interns page</h1>
+    <form class="form-input" [formGroup]="internsForm">
 
-    <mat-form-field>
-        <mat-label>Age *</mat-label>
-        <input matInput name="age" formControlName="age" placeholder="Enter your age"/>
-        <mat-error *ngIf="ageValid?.invalid && (ageValid?.dirty || ageValid?.touched)" class="alert">
-            *Age is required.
-        </mat-error>
-    </mat-form-field><br><br>
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput  placeholder="Enter name" formControlName="name" required/>
+            <!-- <mat-error *ngIf="nameValid?.invalid && (nameValid?.dirty || nameValid?.touched)" class="alert">
+                *Name is required.
+            </mat-error> -->
+        </mat-form-field>
 
-    <mat-form-field>
-        <mat-label>Date of birth *</mat-label>
-        <input matInput name="dateOfBirth" formControlName="dateOfBirth" placeholder="Enter the date of birth"/>
-        <mat-error *ngIf="dateOfBirthValid?.invalid && (dateOfBirthValid?.dirty || dateOfBirthValid?.touched)" class="alert">
-            *Date of birth is required.
-        </mat-error>
-    </mat-form-field><br><br>
+        <mat-form-field>
+            <mat-label>Age</mat-label>
+            <input matInput placeholder="Enter your age" formControlName="age" required/>
+            <!-- <mat-error *ngIf="ageValid?.invalid && (ageValid?.dirty || ageValid?.touched)" class="alert">
+                *Age is required.
+            </mat-error> -->
+        </mat-form-field>
 
-    <button mat-raised-button color="primary" (click)="addIntern()">ADD</button>
+        <mat-form-field>
+            <mat-label>Date of birth</mat-label>
+            <input matInput placeholder="Enter the date of birth" formControlName="dateOfBirth" required/>
+            <!-- <mat-error *ngIf="dateOfBirthValid?.invalid && (dateOfBirthValid?.dirty || dateOfBirthValid?.touched)" class="alert">
+                *Date of birth is required.
+            </mat-error> -->
+        </mat-form-field>
 
-</form>
+        <button mat-raised-button color="primary" (click)="addIntern()">ADD</button>
+
+    </form>
+
+</div>

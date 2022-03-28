@@ -35,9 +35,12 @@
             </mat-card-actions>
         </mat-card>
     </div>
-    <div class="div">
-        <mat-card routerLink="add-intern" class="card-intern">
+    <!-- <div class="div">
+        <mat-card routerLink="/add-intern" class="card-intern">
             <button mat-icon-button><mat-icon>+</mat-icon></button>
         </mat-card>
-    </div>
+    </div> -->
 </div>
+<button mat-raised-button color="primary" (click)="newIntern()">
+    Add a new Intern
+</button>

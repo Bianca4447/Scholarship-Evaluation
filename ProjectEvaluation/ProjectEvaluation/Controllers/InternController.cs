@@ -37,7 +37,7 @@ namespace ProjectEvaluation.Controllers
         /// </summary>
         /// <param name="Id"></param>
         /// <returns></returns>
-        [HttpGet("Id/{Id}")]
+        [HttpGet("{Id}")]
         public async Task<IActionResult> GetInternByIdAsync(Guid Id)
         {
             return Ok(await _collectionService.Get(Id));
