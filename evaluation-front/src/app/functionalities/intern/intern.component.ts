@@ -33,6 +33,14 @@ export class InternComponent implements OnInit {
     this.router.navigate(['/add-intern']);
   }
 
+  ascending(){
+    this.filterInterns = this.filterInterns.sort((a,b) => a.name.localeCompare(b.name));
+  }
+
+  descending(){
+    this.filterInterns = this.filterInterns.sort((a,b) => b.name.localeCompare(a.name));
+  }
+
 
 
 }

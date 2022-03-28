@@ -26,7 +26,7 @@ export class InternService {
   }
 
   addIntern(intern: Intern){
-    return  this.httpClient.post(this.baseUrl+"/interns", intern).subscribe(
+    return  this.httpClient.post(this.baseUrl+"/intern", intern).subscribe(
       response => {
         this.router.navigate(['intern'])
       }
