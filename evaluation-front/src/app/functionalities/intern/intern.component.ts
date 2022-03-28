@@ -22,6 +22,12 @@ export class InternComponent implements OnInit {
     })
   }
 
+  editIntern(intern: any){
+    this.router.navigate(['/add-intern'], {
+      queryParams: {IdIntern: intern.id}
+    })
+  }
+
   deleteIntern(id: string){
     this.service.deleteIntern(id).subscribe((response) => {
       this.interns = this.interns.filter((intern) => intern.id != id);

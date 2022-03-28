@@ -39,7 +39,7 @@ export class InternService {
    
   }
   
-  editNote(intern: Intern){
+  editIntern(intern: Intern){
     return this.httpClient.put(this.baseUrl + "/intern?id="+ intern.id, intern).subscribe(response => {
         this.router.navigate(['intern'])
     });
